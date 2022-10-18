@@ -31,15 +31,18 @@ export const Form = styled.form`
     color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
 
-  
-
-    a{
-      margin-top: 9rem;
-      color: ${({ theme }) => theme.COLORS.PINK};
-  
+  .button{
+    margin-top: 1rem;
   }
 
-  
+  a{
+    margin-top: 7rem;
+    margin-inline: 2rem;
+    color: ${({ theme }) => theme.COLORS.PINK};
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
 `;
 
 export const Background = styled.div`
