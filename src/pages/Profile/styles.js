@@ -23,6 +23,7 @@ export const Form = styled.form`
 
 .btnForm{
   margin-top: 2.4rem;
+  
 }
 `;
 
