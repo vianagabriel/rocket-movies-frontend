@@ -14,20 +14,18 @@ export const Container = styled.header`
     color: ${({ theme }) => theme.COLORS.PINK};
  
   }
-
 `;
+
 
 export const InputContainer = styled.div`
  width: 63rem;
  height: 5.6rem;
-
 `;
-  
+
 export const AreaLogout = styled.div`
   display: flex;
   align-items: center;
   gap: .9rem;
-
 
   div{
     display: flex;
@@ -47,6 +45,7 @@ export const AreaLogout = styled.div`
   img{
     width: 6.4rem;
     border-radius: 9999px;
-
   }
 `;
+  
+

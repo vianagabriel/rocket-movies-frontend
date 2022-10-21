@@ -3,6 +3,7 @@ import { Background, Container,Form } from './styles';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
+import { Link } from 'react-router-dom';
 
 export function SignIn(){
   return(
@@ -23,8 +24,8 @@ export function SignIn(){
          icon={FiLock}
         />
 
-        <Button title='Entrar'/>
-        <a href="#">Criar conta</a>
+        <Button  title='Entrar' />
+        <Link to="/register">Criar conta</Link>
       </Form>
 
       <Background/>

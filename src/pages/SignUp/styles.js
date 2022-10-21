@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import backgroundImg from '../../assets/background.png';
 
 export const Container = styled.div`
@@ -27,7 +27,7 @@ export const Form = styled.form`
   }
 
   p{
-    margin-top: 1.4rem;
+    margin-top: .5rem;
     color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
 
@@ -36,7 +36,7 @@ export const Form = styled.form`
   }
 
   a{
-    margin-top: 7rem;
+    margin-top: 4rem;
     margin-inline: 2rem;
     color: ${({ theme }) => theme.COLORS.PINK};
     display: flex;

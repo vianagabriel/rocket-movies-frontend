@@ -1,8 +1,11 @@
-import { FiArrowLeft } from "react-icons/fi";
-import { Container, Main, InputContainer, Content, Box } from "./styles";
+import { FiArrowLeft } from 'react-icons/fi';
+import { Container, Main, InputContainer, Content, Box, Submit } from './styles';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
-import { Textarea } from "../../components/Textarea";
+import { Textarea } from '../../components/Textarea';
+import { TagItem } from '../../components/TagItem';
+import { Button } from '../../components/Button';
+import { Link } from '../../components/Link'; 
 
 export function NewMovie(){
   return(
@@ -10,10 +13,7 @@ export function NewMovie(){
        <Header/>
 
        <Main>
-         <a href="/">
-          <FiArrowLeft/>
-          voltar
-         </a>
+         <Link to='/' title='voltar'  icon={FiArrowLeft} />
 
          <Content>
 
@@ -21,7 +21,7 @@ export function NewMovie(){
 
          <InputContainer>
            <Input type='text' placeholder='Título'/>
-           <Input type='text' placeholder='Sua nota ( de 0 a 5 ) '/>
+           <Input type='number' placeholder='Sua nota ( de 0 a 5 ) '/>
          </InputContainer>
          
          <Textarea placeholder='Observações'/>
@@ -29,8 +29,14 @@ export function NewMovie(){
          <h3>Marcadores</h3>
 
          <Box>
-
+           <TagItem value='Aventura'/>
+           <TagItem placeholder='Novo marcador' isNew/>
          </Box>
+
+         <Submit>
+           <Button title='Excluir filme' isDark />
+           <Button title='Salvar alterações' />
+         </Submit>
          </Content>
 
        </Main>

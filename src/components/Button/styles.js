@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.button`
   width: 100%;
@@ -9,8 +9,8 @@ export const Container = styled.button`
   gap: .8rem;
   border: none;
   border-radius: 1rem;
-  color: ${({ theme }) => theme.COLORS.GRAY_500};
-  background-color: ${({ theme }) => theme.COLORS.PINK};
+  color: ${({ theme, isDark }) => isDark ? theme.COLORS.PINK : theme.COLORS.GRAY_500};
+  background-color: ${({ theme, isDark }) => isDark ? theme.COLORS.BACKGROUND_900 : theme.COLORS.PINK};
 
   font-size: 16px;
   font-weight: 500;
@@ -18,4 +18,5 @@ export const Container = styled.button`
   &:disabled {
     opacity: 0.5;
   }
+
 `;

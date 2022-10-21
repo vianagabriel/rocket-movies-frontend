@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
  width: 100%;
@@ -6,21 +6,7 @@ export const Container = styled.div`
 
 export const Main = styled.main`
   margin-inline: 12.3rem;
-  padding-top: 4rem;
-
-  a{
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-    color: ${({ theme }) => theme.COLORS.PINK};
-    margin-bottom: 2.4rem;
-
-    svg{
-     font-size: 1.6rem;
-     margin-top: .4rem;
-    }
-  }
-  
+  padding-top: 4rem; 
   
 `;
 
@@ -71,4 +57,19 @@ export const Box = styled.div`
  background-color: ${( { theme }) => theme.COLORS.BACKGROUND_900};
  border-radius: .8rem;
  margin-top: 2.4rem;
+ display: flex;
+ align-items: center;
+ gap: 2.4rem;
+ padding-top: .8rem;
+ padding-left:1.6rem ;
+`;
+
+export const Submit = styled.div`
+ width: 100%;
+ margin-top: 4rem;
+ display: flex;
+ align-items: center;
+ gap: 4rem;
+
+
 `;

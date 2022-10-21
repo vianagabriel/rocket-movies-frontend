@@ -3,6 +3,7 @@ import { Background, Container,Form } from './styles';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
+import { Link } from 'react-router-dom';
 
 export function SignUp(){
   return(
@@ -13,7 +14,7 @@ export function SignUp(){
         <h2>Crie sua conta</h2>
 
         <Input 
-         placeholder="Email"
+         placeholder="Nome"
          type="text"
          icon={FiUser}
         />
@@ -30,10 +31,10 @@ export function SignUp(){
 
         <Button className='button' title='Cadastrar'/>
         
-        <a href="#">
+        <Link to='/'>
         <FiArrowLeft size='20'/>
           Volte para o login 
-        </a>
+        </Link>
       
       </Form>
 
